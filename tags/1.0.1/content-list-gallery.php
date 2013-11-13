@@ -58,8 +58,7 @@ function ysg_chr_youtube_gallery_shortcode( $atts ) {
 	}
         $myvariable = ob_get_clean();
         return $myvariable;
-
     }else{
-	    echo '<h6>N&atilde;o existe nenhum v&iacute;deo cadastrado...</h6>';
+	    echo '<h6>' . __( 'N&atilde;o existe nenhum v&iacute;deo cadastrado...', 'youtube-simple-gallery' ) . '</h6>';
     }
 }

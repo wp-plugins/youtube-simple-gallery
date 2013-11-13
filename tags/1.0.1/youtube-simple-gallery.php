@@ -1,26 +1,30 @@
 <?php
 /*
-	Plugin Name: YouTube Simple Gallery
-	Version: 1.0
-	Description: O YouTube Simple Gallery como o pr&oacute;prio nome j&aacute; diz &eacute; um plugin que voc&ecirc; criar uma &aacute;rea de v&iacute;deos r&aacute;pidamente para o YouTube com gerenciamento via shortcode.
-	Author: CHR Designer
-	Author URI: http://www.chrdesigner.com
-	Plugin URI: http://www.chrdesigner.com/plugin/youtube-simple-gallery.zip
-	License: A slug describing license associated with the plugin (usually GPL2)
+Plugin Name: YouTube Simple Gallery
+Version: 1.1
+Description: O YouTube Simple Gallery como o pr&oacute;prio nome j&aacute; diz &eacute; um plugin que voc&ecirc; criar uma &aacute;rea de v&iacute;deos r&aacute;pidamente para o YouTube com gerenciamento via shortcode.
+Author: CHR Designer
+Author URI: http://www.chrdesigner.com
+Plugin URI: http://www.chrdesigner.com/plugin/youtube-simple-gallery.zip
+License: A slug describing license associated with the plugin (usually GPL2)
+Text Domain: youtube-simple-gallery
+Domain Path: /languages/
 */
+
+load_plugin_textdomain( 'youtube-simple-gallery', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
 
 require_once('custom-post-youtube-gallery.php');
 
 add_image_size( 'chr-thumb-youtube', 320, 180, true  );
 
 function ysg_create_page_personality_gallery() {
-	$title_galeria = 'Galeria de V&#237;deo';
+	$title_galeria = __('Galeria de V&#237;deo', 'youtube-simple-gallery');
 	$check_title=get_page_by_title($title_galeria, 'OBJECT', 'page');
 	if (empty($check_title) ){
 		$chr_page_gallery = array(
 			'post_title' 	 => $title_galeria,
 			'post_type' 	 => 'page',
-			'post_name'	 	 => 'galeria-de-video',
+			'post_name'	 	 => __('galeria-de-video', 'youtube-simple-gallery'),
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
 			'post_content'   => '[chr-youtube-gallery order="DESC" orderby="date" posts="6"]',
