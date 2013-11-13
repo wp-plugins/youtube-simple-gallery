@@ -5,7 +5,7 @@ Version: 1.1
 Description: O YouTube Simple Gallery como o pr&oacute;prio nome j&aacute; diz &eacute; um plugin que voc&ecirc; criar uma &aacute;rea de v&iacute;deos r&aacute;pidamente para o YouTube com gerenciamento via shortcode.
 Author: CHR Designer
 Author URI: http://www.chrdesigner.com
-Plugin URI: http://www.chrdesigner.com/plugin/youtube-simple-gallery.zip
+Plugin URI: http://wordpress.org/plugins/youtube-simple-gallery/
 License: A slug describing license associated with the plugin (usually GPL2)
 Text Domain: youtube-simple-gallery
 Domain Path: /languages/
