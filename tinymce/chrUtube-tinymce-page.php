@@ -40,29 +40,29 @@
 <body>
 	<fieldset>  
 		<legend><img src="<?php echo plugins_url( './../images/icon-youtube.png' , __FILE__ );?>" alt="YouTube Simple Gallery" title="YouTube Simple Gallery" /> YouTube Simple Gallery</legend>
-		<h3>Selecione a order:</h3>
+		<h3><?php echo __('Selecione a order:','youtube-simple-gallery' );?></h3>
 		<ul class="ul-list-order">
 			<li>
 				<select class="order" style="width: 30%; display: inline-block;">
-					<option value="DESC" selected>Decrescente</option>
-					<option value="ASC">Crescente</option>
+					<option value="DESC" selected><?php echo __('Decrescente','youtube-simple-gallery' );?></option>
+					<option value="ASC"><?php echo __('Crescente','youtube-simple-gallery' );?></option>
   				</select> 
 			</li>
 		</ul>
-		<h3>Selecione ordenar por:</h3>
+		<h3><?php echo __('Selecione ordenar por:','youtube-simple-gallery' );?></h3>
 		<ul class="ul-list-order">
 			<li>
 				<select class="orderby" style="width: 30%; display: inline-block;">>
-					<option value="date" selected>Data</option>
-					<option value="name">Nome</option>
-					<option value="rand">Rand&ocirc;mico</option>
+					<option value="date" selected><?php echo __('Data','youtube-simple-gallery' );?></option>
+					<option value="name"><?php echo __('Nome','youtube-simple-gallery' );?></option>
+					<option value="rand"><?php echo __('Rand&ocirc;mico','youtube-simple-gallery' );?></option>
   				</select> 
 			</li>
 		</ul>
-		<h3>Listagem de V&iacute;deos por p&aacute;gina:</h3>
+		<h3><?php echo __('Listagem de V&iacute;deos por p&aacute;gina:','youtube-simple-gallery' );?></h3>
 		<ul id="ul-list-page">
 			<li>
-				<select class="page" style="width: 30%; display: inline-block;">>
+				<select class="page" style="width: 30%; display: inline-block;">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -75,11 +75,11 @@
 					<option value="10">10</option>
 					<option value="11">11</option>
 					<option value="12">12</option>
-					<option value="-1">Todos</option>
+					<option value="-1"><?php echo __('Todos','youtube-simple-gallery' );?></option>
   				</select> 
 			</li>
 		</ul>
-		<button class="insert_information" id="btn-send">Enviar</button>
+		<button class="insert_information" id="btn-send"><?php echo __('Enviar','youtube-simple-gallery' );?></button>
 	</fieldset>
 </body>
 </html>

@@ -2,18 +2,18 @@
 	add_action('init', 'ysg_type_post_video');
 	function ysg_type_post_video() { 
 		$labels = array(
-			'name' => _x('V&iacute;deos', 'post type general name'),
-			'singular_name' => _x('V&iacute;deo', 'post type singular name'),
-			'add_new' => _x('Adicionar Novo', 'Novo V&iacute;deo'),
-			'add_new_item' => __('Adicionar Novo V&iacute;deo'),
-			'edit_item' => __('Editar Item'),
-			'new_item' => __('Novo V&iacute;deo'),
-			'view_item' => __('Visualizar V&iacute;deo'),
-			'search_items' => __('Procurar V&iacute;deo'),
-			'not_found' =>  __('Nenhum registro encontrado'),
-			'not_found_in_trash' => __('Nenhum registro encontrado na lixeira'),
+			'name' => __('V&iacute;deos', 'youtube-simple-gallery'),
+			'singular_name' => __('V&iacute;deo', 'youtube-simple-gallery'),
+			'add_new' => __('Adicionar Novo', 'youtube-simple-gallery'),
+			'add_new_item' => __('Adicionar Novo V&iacute;deo', 'youtube-simple-gallery'),
+			'edit_item' => __('Editar Item', 'youtube-simple-gallery'),
+			'new_item' => __('Novo V&iacute;deo', 'youtube-simple-gallery'),
+			'view_item' => __('Visualizar V&iacute;deo', 'youtube-simple-gallery'),
+			'search_items' => __('Procurar V&iacute;deo', 'youtube-simple-gallery'),
+			'not_found' =>  __('Nenhum registro encontrado', 'youtube-simple-gallery'),
+			'not_found_in_trash' => __('Nenhum registro encontrado na lixeira', 'youtube-simple-gallery'),
 			'parent_item_colon' => '',
-			'menu_name' => 'V&iacute;deos'
+			'menu_name' => __('V&iacute;deos', 'youtube-simple-gallery')
 		);
 		$args = array(
 			'labels' => $labels,
@@ -44,7 +44,7 @@
 	}
 	
 	function ysg_video_meta_box(){        
-		add_meta_box('meta_box_video', __('Detalhes do V&iacute;deo'), 'ysg_meta_box_meta_video', 'youtube-gallery', 'normal', 'high');
+		add_meta_box('meta_box_video', __('Detalhes do V&iacute;deo', 'youtube-simple-gallery'), 'ysg_meta_box_meta_video', 'youtube-gallery', 'normal', 'high');
 	}
 
 	function ysg_meta_box_meta_video(){
@@ -54,24 +54,24 @@
 		echo '
 		<ul>
 			<li>
-				<label for="inputValorUrl" style="width:100%; display:block; font-weight: bold;">URL do v&iacute;deo: </label>
+				<label for="inputValorUrl" style="width:100%; display:block; font-weight: bold;">'. __('URL do v&iacute;deo:', 'youtube-simple-gallery') .'</label>
 				<input style="width:100%; display:block;" type="text" name="valor_url" id="inputValorUrl" value="' . $metaBoxUrl . '" />
 			</li>
 			<li>
-				<em style="padding: 5px 0; display: block; color: #666;">
-					Exemplos de modelos poss&iacute;veis:<br />
+				<em style="padding: 5px 0; display: block; color: #666;"> '.
+					__('Exemplos de modelos poss&iacute;veis:', 'youtube-simple-gallery').'<br />
 					&bull; http://www.youtube.com/watch?v=UzifCbU_gJU<br />
 					&bull; http://www.youtube.com/watch?v=UzifCbU_gJU&feature=related<br />
 					&bull; http://youtu.be/UzifCbU_gJU<br />
 				</em>
 			</li>
 			<li>
-				<label for="inputValorDesc" style="width:100%; display:block; font-weight: bold;">Descri&ccedil;&atilde;o: </label>
+				<label for="inputValorDesc" style="width:100%; display:block; font-weight: bold;">'. __('Descri&ccedil;&atilde;o:', 'youtube-simple-gallery') .' </label>
 				<input style="width:100%; display:block;" type="text" name="valor_desc" id="inputValorDesc" value="' . $metaBoxDesc . '" />
 			</li>
 			<li>
-				<em style="padding: 5px 0; display: block; color: #666;">
-					Insir&aacute; um texto se desejar.
+				<em style="padding: 5px 0; display: block; color: #666;">'.
+					__('Insir&aacute; um texto se desejar:', 'youtube-simple-gallery').'
 				</em>
 			</li>
 		</ul>
