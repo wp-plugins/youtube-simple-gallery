@@ -15,17 +15,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Localizations ==
 
-* Portugu&ecirc;s (Default)
-* English
+Portugu&ecirc;s
 
 == Description ==
 
 O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacute;rea de v&iacute;deos para o YouTube.
-
-= Idiomas: =
-
-* Portugu&ecirc;s (Default)
-* English
 
 == Installation ==
 
@@ -51,10 +45,10 @@ Qual &eacute; a licen&ccedil;a do plugin?
 
 Este plugin esta licenciado como GPL.
 
+
 = O que eu preciso para utilizar este plugin? =
 
 * Possuir instalada qualquer vers&atilde;o do WordPress.
-* Opcional ter o plugin WP-PageNavi instalado para o sistema de pagina&ccedil;&atilde;o.
 
 == Screenshots ==
 
@@ -71,19 +65,11 @@ Este plugin esta licenciado como GPL.
 
 * Vers&atilde;o incial do plugin.
 
-= 1.0.1 =
-
-* Suporte multi-l&iacute;nguas.
-
 == Upgrade Notice ==
 
 = 1.0.0 =
 
 * Enjoy it.
-
-= 1.0.1 =
-
-* Suporte multi-l&iacute;nguas.
 
 == License ==
 
