@@ -39,3 +39,25 @@
 .chr-default-pagination a.selected{
 	border-color: #000000; font-weight: bold; cursor: default; color: #444444;
 }
+
+/*Widget CSS*/
+
+.ul-Widget-YoutubeGallery{
+	display: inline-block; width: 100%;
+}
+
+.ul-Widget-YoutubeGallery li.li-Widget-YoutubeGallery{
+	display: block; margin-bottom: 10px;
+}
+
+.ul-Widget-YoutubeGallery li h3.title-Widget-YoutubeGallery{
+	color: #444444; line-height: normal; margin-bottom: 5px;
+}
+
+.btn-YSG-Widget{
+	text-decoration: none; font-weight: bold;
+}
+
+.btn-YSG-Widget:before{
+	content: '\00BB ';	
+}

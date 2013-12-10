@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YouTube Simple Gallery v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-10 08:43-0300\n"
-"PO-Revision-Date: 2013-11-10 08:57-0300\n"
+"POT-Creation-Date: 2013-12-09 21:21-0300\n"
+"PO-Revision-Date: 2013-12-09 21:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: content-list-gallery.php:62
+#: content-list-gallery.php:71 widget.php:53
 msgid "N&atilde;o existe nenhum v&iacute;deo cadastrado..."
 msgstr "No video registred…"
 
@@ -82,13 +82,73 @@ msgstr "Description:"
 msgid "Insir&aacute; um texto se desejar:"
 msgstr "Insert a subtext:"
 
+#: widget.php:10
+msgid "YouTube Simple Gallery Widget"
+msgstr "YouTube Simple Gallery Widget"
+
+#: widget.php:13
+msgid "Um simples Widget para gerar a sua galeria de v&iacute;deos"
+msgstr "A simple widget to generate your video gallery"
+
+#: widget.php:50
+msgid "Veja Mais"
+msgstr "Read More"
+
+#: widget.php:68
+msgid "Listagem dos V&iacute;deos"
+msgstr "List of Videos"
+
+#: widget.php:70 youtube-simple-gallery.php:27
+msgid "galeria-de-video"
+msgstr "video-gallery"
+
+#: widget.php:75
+msgid "T&iacute;tulo: "
+msgstr "Title: "
+
+#: widget.php:79
+msgid "Quantidade de V&iacute;deos:"
+msgstr "Number of Videos:"
+
+#: widget.php:83
+msgid "Insir&aacute; o SLUG da sua Galeria de V&iacute;deo:"
+msgstr "Enter the SLUD Video Gallery:"
+
 #: youtube-simple-gallery.php:21
 msgid "Galeria de V&#237;deo"
 msgstr "Video Gallery"
 
-#: youtube-simple-gallery.php:27
-msgid "galeria-de-video"
-msgstr "video-gallery"
+#: youtube-simple-gallery.php:112
+msgid " YouTube Simple Gallery - Configura&ccedil;&otilde;es"
+msgstr " YouTube Simple Gallery - Settings"
+
+#: youtube-simple-gallery.php:115
+msgid "Op&ccedil;&otilde;es Salvas"
+msgstr "Options Saved"
+
+#: youtube-simple-gallery.php:120
+msgid "Configura&ccedil;&otilde;es padr&otilde;es do YouTube Simple Gallery"
+msgstr "Default settings YouTube Simple Gallery"
+
+#: youtube-simple-gallery.php:123
+msgid "Tamanho do V&iacute;deo"
+msgstr "Video Size"
+
+#: youtube-simple-gallery.php:129
+msgid "Tamanho do Thumbnail Maior"
+msgstr "Thumbnail Size Bigger"
+
+#: youtube-simple-gallery.php:135
+msgid "Tamanho do Thumbnail Menor"
+msgstr "Thumbnail Size Smallest"
+
+#: youtube-simple-gallery.php:140
+msgid "AutoPlay"
+msgstr "AutoPlay"
+
+#: youtube-simple-gallery.php:149
+msgid "Salvar Op&ccedil;&otilde;es"
+msgstr "Save Options"
 
 #: tinymce/chrUtube-tinymce-page.php:43
 msgid "Selecione a order:"
@@ -130,26 +190,30 @@ msgstr "All"
 msgid "Enviar"
 msgstr "Submit"
 
-#. Plugin Name of the plugin/theme
-msgid "YouTube Simple Gallery"
-msgstr "YouTube Simple Gallery"
+#~ msgid "Exibir V&iacute;deos:"
+#~ msgstr "Show Videos:"
 
-#. Plugin URI of the plugin/theme
-msgid "http://wordpress.org/plugins/youtube-simple-gallery/"
-msgstr "http://wordpress.org/plugins/youtube-simple-gallery/"
+#~ msgid ""
+#~ "<em>Inserir o valor <strong>1</strong> para que o autoplay seja "
+#~ "verdadeiro sen&atilde;o utilize <strong>0</strong> para que seja falso</"
+#~ "em>"
+#~ msgstr ""
+#~ "<em> Enter value <strong> 1 </ strong> for the autoplay to be true but "
+#~ "use <strong> 0 </ strong> to be false </ em>"
 
-#: Description of the plugin/theme
-msgid ""
-"O YouTube Simple Gallery como o pr&oacute;prio nome j&aacute; diz &eacute; "
-"um plugin que voc&ecirc; criar uma &aacute;rea de v&iacute;deos r&aacute;"
-"pidamente para o YouTube com gerenciamento via shortcode."
-msgstr ""
-"YouTube Simple Gallery is a plugin you can create an area for YouTube videos "
-"quickly with management by shortcode."
+#~ msgid "http://wordpress.org/plugins/youtube-simple-gallery/"
+#~ msgstr "http://wordpress.org/plugins/youtube-simple-gallery/"
 
-#. Author of the plugin/theme
-msgid "CHR Designer"
-msgstr "CHR Designer"
+#~ msgid ""
+#~ "O YouTube Simple Gallery como o pr&oacute;prio nome j&aacute; diz "
+#~ "&eacute; um plugin que voc&ecirc; criar uma &aacute;rea de v&iacute;deos "
+#~ "r&aacute;pidamente para o YouTube com gerenciamento via shortcode."
+#~ msgstr ""
+#~ "YouTube Simple Gallery is a plugin you can create an area for YouTube "
+#~ "videos quickly with management by shortcode."
+
+#~ msgid "CHR Designer"
+#~ msgstr "CHR Designer"
 
 #~ msgctxt "youtube-simple-gallery"
 #~ msgid "Video"
