@@ -27,6 +27,12 @@ O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacut
 * Portugu&ecirc;s (Default)
 * English
 
+= New Updates 2.0 =
+
+* Add support for widget
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
+
+
 == Installation ==
 
 = Instala&ccedil;&atilde;o do plugin: =
@@ -63,7 +69,9 @@ Este plugin esta licenciado como GPL.
 3. P&aacute;gina de Cadastro do V&iacute;deo 
 4. P&aacute;gina com o shortcode para a cria&ccedil;&atilde;o da galeria
 5. Box de configura&ccedil;&atilde;o do shortcode
-6. Exibi&ccedil;&atilde;o dos v&iacute;deos
+6. Tela de configura&ccedil;&atilde;o do plugin
+7. Widget
+8. Exibi&ccedil;&atilde;o dos v&iacute;deos
 
 == Changelog ==
 
@@ -75,6 +83,11 @@ Este plugin esta licenciado como GPL.
 
 * Suporte multi-l&iacute;nguas.
 
+= 2.0.0 =
+
+* Add support for widget.
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+
 == Upgrade Notice ==
 
 = 1.0.0 =
@@ -84,6 +97,12 @@ Este plugin esta licenciado como GPL.
 = 1.0.1 =
 
 * Suporte multi-l&iacute;nguas.
+
+= 2.0.0 =
+
+* new: Add support for widget.
+
+* new: New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 == License ==
 
