@@ -6,20 +6,32 @@ Tags: youtube, video gallery, simple gallery, galeria de video, thickbox
 
 Requires at least: 3.0
 
-Tested up to: 3.7
+Tested up to: 3.7.1
 
-Stable tag: 1.0.1
+Stable tag: 2.0.0
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Localizations ==
 
-Portugu&ecirc;s
+* Portugu&ecirc;s (Default)
+* English
 
 == Description ==
 
 O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacute;rea de v&iacute;deos para o YouTube.
+
+= Idiomas: =
+
+* Portugu&ecirc;s (Default)
+* English
+
+= New Updates 2.0 =
+
+* Add support for widget
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
+
 
 == Installation ==
 
@@ -45,10 +57,10 @@ Qual &eacute; a licen&ccedil;a do plugin?
 
 Este plugin esta licenciado como GPL.
 
-
 = O que eu preciso para utilizar este plugin? =
 
 * Possuir instalada qualquer vers&atilde;o do WordPress.
+* Opcional ter o plugin WP-PageNavi instalado para o sistema de pagina&ccedil;&atilde;o.
 
 == Screenshots ==
 
@@ -57,7 +69,9 @@ Este plugin esta licenciado como GPL.
 3. P&aacute;gina de Cadastro do V&iacute;deo 
 4. P&aacute;gina com o shortcode para a cria&ccedil;&atilde;o da galeria
 5. Box de configura&ccedil;&atilde;o do shortcode
-6. Exibi&ccedil;&atilde;o dos v&iacute;deos
+6. Tela de configura&ccedil;&atilde;o do plugin
+7. Widget
+8. Exibi&ccedil;&atilde;o dos v&iacute;deos
 
 == Changelog ==
 
@@ -65,11 +79,30 @@ Este plugin esta licenciado como GPL.
 
 * Vers&atilde;o incial do plugin.
 
+= 1.0.1 =
+
+* Suporte multi-l&iacute;nguas.
+
+= 2.0.0 =
+
+* Add support for widget.
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+
 == Upgrade Notice ==
 
 = 1.0.0 =
 
 * Enjoy it.
+
+= 1.0.1 =
+
+* Suporte multi-l&iacute;nguas.
+
+= 2.0.0 =
+
+* new: Add support for widget.
+
+* new: New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 == License ==
 
