@@ -32,7 +32,7 @@ O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacut
 * Add support for widget
 * New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
 
-= Demo =
+= Demos =
 
 Sign in for see the demos, all my plugins...
 
