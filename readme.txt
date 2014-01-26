@@ -15,16 +15,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Localizations ==
 
-* Portugu&ecirc;s (Default)
+* Português (Default)
 * English
 
 == Description ==
 
-O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacute;rea de v&iacute;deos para o YouTube.
+O YouTube Simple Gallery é um plugin que você pode criar uma área de vídeos para o YouTube.
 
 = Idiomas: =
 
-* Portugu&ecirc;s (Default)
+* Português (Default)
 * English
 
 = New Updates 2.0 =
@@ -36,58 +36,58 @@ O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacut
 
 Sign in for see the demos, all my plugins...
 
-Front-end: http://www.chrdesigner.com/demo/
-Back-end: http://www.chrdesigner.com/demo/login/
+* Front-end: http://www.chrdesigner.com/demo/
+* Back-end: http://www.chrdesigner.com/demo/login/
 
 == Installation ==
 
-= Instala&ccedil;&atilde;o do plugin: =
+= Instalação do plugin: =
 
 * Envie os arquivos do plugin para a pasta wp-content/plugins, ou instale usando o instalador de plugins do WordPress;
 * Ative o plugin;
 
 = Como usar: =
 
-* Ap&oacute;s ativar o plugin ir&aacute; aparecer uma aba chamada "V&iacute;deos" nela voc&ecirc; poder&aacute; cadastrar seus v&iacute;deos somente com o link do v&iacute;deo, o plugin aceitar&aacute; tr&ecirc;s formatos diferentes de URL.
-* Ele autom&aacute;ticamente j&aacute; gera o thumbnail do v&iacute;deo, mas se voc&ecirc; desejar customizar a thumb &eacute; s&oacute; adicionar a mesma como "Imagem Destacada".
-* Ao ativar o plugin autom&aacute;ticamente j&aacute; &eacute; criada uma p&aacute;gina chamada "Galeria de V&iacute;deo" que a mesma ser&aacute; encontrada dentro da aba "P&aacute;gina".
-* Nela conter&aacute; um shortcode equivalente a esse: [chr-youtube-gallery order="DESC" orderby="date" posts="6"].
-* Esse &eacute; o padr&atilde;o pr&eacute;-determinado, mas se desejar alterar &eacute; somente apagar o mesmo e clicar no &iacute;cone igual do play do youtube que abrir&aacute; um editor.
-* Nele voc&ecirc; poder&aacute; adicionar as Ordena&ccedil;&otilde;es tanto quanto "Decrescente - Crescente" ou por "Data - Nome - Rand&ocirc;mico" e a Quantidade de V&iacute;deo por p&aacute;gina que voc&ecirc; desejar.
+* Após ativar o plugin irá aparecer uma aba chamada "Vídeos" nela você poderá cadastrar seus vídeos somente com o link do vídeo, o plugin aceitará três formatos diferentes de URL.
+* Ele automáticamente já gera o thumbnail do vídeo, mas se você desejar customizar a thumb é só adicionar a mesma como "Imagem Destacada".
+* Ao ativar o plugin automáticamente já é criada uma página chamada "Galeria de Vídeo" que a mesma será encontrada dentro da aba "Página".
+* Nela conterá um shortcode equivalente a esse: [chr-youtube-gallery order="DESC" orderby="date" posts="6"].
+* Esse é o padrão pré-determinado, mas se desejar alterar é somente apagar o mesmo e clicar no ícone igual do play do youtube que abrirá um editor.
+* Nele você poderá adicionar as Ordenações tanto quanto "Decrescente - Crescente" ou por "Data - Nome - Randômico" e a Quantidade de Vídeo por página que você desejar.
 
 == Frequently Asked Questions ==
 
 = 
-Qual &eacute; a licen&ccedil;a do plugin? 
+Qual é a licença do plugin? 
 =
 
 Este plugin esta licenciado como GPL.
 
 = O que eu preciso para utilizar este plugin? =
 
-* Possuir instalada qualquer vers&atilde;o do WordPress.
-* Opcional ter o plugin WP-PageNavi instalado para o sistema de pagina&ccedil;&atilde;o.
+* Possuir instalada qualquer versão do WordPress.
+* Opcional ter o plugin WP-PageNavi instalado para o sistema de paginação.
 
 == Screenshots ==
 
-1. Aba lateral de V&iacute;deos
-2. P&aacute;gina de listagem dos V&iacute;deos
-3. P&aacute;gina de Cadastro do V&iacute;deo 
-4. P&aacute;gina com o shortcode para a cria&ccedil;&atilde;o da galeria
-5. Box de configura&ccedil;&atilde;o do shortcode
-6. Tela de configura&ccedil;&atilde;o do plugin
+1. Aba lateral de Vídeos
+2. Página de listagem dos Vídeos
+3. Página de Cadastro do Vídeo 
+4. Página com o shortcode para a criação da galeria
+5. Box de configuração do shortcode
+6. Tela de configuração do plugin
 7. Widget
-8. Exibi&ccedil;&atilde;o dos v&iacute;deos
+8. Exibição dos vídeos
 
 == Changelog ==
 
 = 1.0.0 =
 
-* Vers&atilde;o incial do plugin.
+* Versão incial do plugin.
 
 = 1.0.1 =
 
-* Suporte multi-l&iacute;nguas.
+* Suporte multi-línguas.
 
 = 2.0.0 =
 
@@ -102,7 +102,7 @@ Este plugin esta licenciado como GPL.
 
 = 1.0.1 =
 
-* Suporte multi-l&iacute;nguas.
+* Suporte multi-línguas.
 
 = 2.0.0 =
 
