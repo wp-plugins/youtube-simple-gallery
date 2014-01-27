@@ -1,98 +1,82 @@
-=== YouTube Simple Gallery ===
+=== Responsive jQuery Slider ===
 
 Contributors: chrdesigner
 Donate link: 
-Tags: youtube, video gallery, simple gallery, galeria de video, thickbox
+Tags: slider, jquery, cycle2, responsive, animate
 
 Requires at least: 3.0
 
-Tested up to: 3.7.1
+Tested up to: 3.8.0
 
-Stable tag: 2.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Localizations ==
 
-* Português (Default)
-* English
+* English (Default)
+* Portugu&ecirc;s
 
 == Description ==
 
-O YouTube Simple Gallery é um plugin que você pode criar uma área de vídeos para o YouTube.
+Responsive jQuery Slider - jQuery Cycle 2 with Animate.css with some really cool animations.
 
-= Idiomas: =
+= Languages: =
 
-* Português (Default)
-* English
+* English (Default)
+* Portugu&ecirc;s
 
-= New Updates 2.0 =
-
-* Add support for widget
-* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
-
-= Demos =
+= Demo =
 
 Sign in for see the demos, all my plugins...
 
 * Front-end: http://www.chrdesigner.com/demo/
 * Back-end: http://www.chrdesigner.com/demo/login/
 
+
 == Installation ==
 
-= Instalação do plugin: =
+= Installation =
 
-* Envie os arquivos do plugin para a pasta wp-content/plugins, ou instale usando o instalador de plugins do WordPress;
-* Ative o plugin;
+* Upload the plugin to the wp-content/plugins folder;
+* Activate the plugin;
 
-= Como usar: =
+= How to use: =
 
-* Após ativar o plugin irá aparecer uma aba chamada "Vídeos" nela você poderá cadastrar seus vídeos somente com o link do vídeo, o plugin aceitará três formatos diferentes de URL.
-* Ele automáticamente já gera o thumbnail do vídeo, mas se você desejar customizar a thumb é só adicionar a mesma como "Imagem Destacada".
-* Ao ativar o plugin automáticamente já é criada uma página chamada "Galeria de Vídeo" que a mesma será encontrada dentro da aba "Página".
-* Nela conterá um shortcode equivalente a esse: [chr-youtube-gallery order="DESC" orderby="date" posts="6"].
-* Esse é o padrão pré-determinado, mas se desejar alterar é somente apagar o mesmo e clicar no ícone igual do play do youtube que abrirá um editor.
-* Nele você poderá adicionar as Ordenações tanto quanto "Decrescente - Crescente" ou por "Data - Nome - Randômico" e a Quantidade de Vídeo por página que você desejar.
+* Once you have activated the plugin, go to "Appearance -> RJS Settings".
+* In "Responsive jQuery Slider - Settings", you have control in different styles for presentation the image, texts, times for transition and another things.
+* For register the Sliders, you go to the page "Sliders -> Add New".
+* In "Add New Slider", you have three Caption for register your text and each has a different style and color, size and position. For register one link you have two options: First you can link to a page or post and Second you can personalize your destination. Click in "Set slider image" and select your desired image.
+* Use the function &lt;?php if (function_exists("chr_responsive_jquery_slider")) { chr_responsive_jquery_slider(); }?&gt; for show the Responsive jQuery Slider in your site.
+
 
 == Frequently Asked Questions ==
 
 = 
-Qual é a licença do plugin? 
+What is the plugin license?
 =
 
-Este plugin esta licenciado como GPL.
-
-= O que eu preciso para utilizar este plugin? =
-
-* Possuir instalada qualquer versão do WordPress.
-* Opcional ter o plugin WP-PageNavi instalado para o sistema de paginação.
+This plugin is licensed under GPL.
 
 == Screenshots ==
 
-1. Aba lateral de Vídeos
-2. Página de listagem dos Vídeos
-3. Página de Cadastro do Vídeo 
-4. Página com o shortcode para a criação da galeria
-5. Box de configuração do shortcode
-6. Tela de configuração do plugin
-7. Widget
-8. Exibição dos vídeos
+1. Side flap Slider
+2. List all Sliders
+3. Add New Slider
+4. Side flap RJS Settings
+5. Responsive jQuery Slider - Settings
+6. Final Result
 
 == Changelog ==
 
 = 1.0.0 =
 
-* Versão incial do plugin.
+* Initial version of the plugin.
 
 = 1.0.1 =
 
-* Suporte multi-línguas.
-
-= 2.0.0 =
-
-* Add support for widget.
-* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+* Updated a bug.
 
 == Upgrade Notice ==
 
@@ -102,18 +86,12 @@ Este plugin esta licenciado como GPL.
 
 = 1.0.1 =
 
-* Suporte multi-línguas.
-
-= 2.0.0 =
-
-* new: Add support for widget.
-
-* new: New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+* Updated a bug.
 
 == License ==
 
-YouTube Simple Gallery is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Responsive jQuery Slider is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-YouTube Simple Gallery is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+Responsive jQuery Slider is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with CodexFree. If not, see <http://www.gnu.org/licenses/>.
