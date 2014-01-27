@@ -1,31 +1,36 @@
-=== Responsive jQuery Slider ===
+=== YouTube Simple Gallery ===
 
 Contributors: chrdesigner
 Donate link: 
-Tags: slider, jquery, cycle2, responsive, animate
+Tags: youtube, video gallery, simple gallery, galeria de video, thickbox
 
 Requires at least: 3.0
 
-Tested up to: 3.8.0
+Tested up to: 3.7.1
 
-Stable tag: 1.0.1
+Stable tag: 2.0.0
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Localizations ==
 
-* English (Default)
-* Portugu&ecirc;s
+* Portugu&ecirc;s (Default)
+* English
 
 == Description ==
 
-Responsive jQuery Slider - jQuery Cycle 2 with Animate.css with some really cool animations.
+O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacute;rea de v&iacute;deos para o YouTube.
 
-= Languages: =
+= Idiomas: =
 
-* English (Default)
-* Portugu&ecirc;s
+* Portugu&ecirc;s (Default)
+* English
+
+= New Updates 2.0 =
+
+* Add support for widget
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
 
 = Demo =
 
@@ -34,49 +39,60 @@ Sign in for see the demos, all my plugins...
 * Front-end: http://www.chrdesigner.com/demo/
 * Back-end: http://www.chrdesigner.com/demo/login/
 
-
 == Installation ==
 
-= Installation =
+= Instala&ccedil;&atilde;o do plugin: =
 
-* Upload the plugin to the wp-content/plugins folder;
-* Activate the plugin;
+* Envie os arquivos do plugin para a pasta wp-content/plugins, ou instale usando o instalador de plugins do WordPress;
+* Ative o plugin;
 
-= How to use: =
+= Como usar: =
 
-* Once you have activated the plugin, go to "Appearance -> RJS Settings".
-* In "Responsive jQuery Slider - Settings", you have control in different styles for presentation the image, texts, times for transition and another things.
-* For register the Sliders, you go to the page "Sliders -> Add New".
-* In "Add New Slider", you have three Caption for register your text and each has a different style and color, size and position. For register one link you have two options: First you can link to a page or post and Second you can personalize your destination. Click in "Set slider image" and select your desired image.
-* Use the function &lt;?php if (function_exists("chr_responsive_jquery_slider")) { chr_responsive_jquery_slider(); }?&gt; for show the Responsive jQuery Slider in your site.
-
+* Ap&oacute;s ativar o plugin ir&aacute; aparecer uma aba chamada "V&iacute;deos" nela voc&ecirc; poder&aacute; cadastrar seus v&iacute;deos somente com o link do v&iacute;deo, o plugin aceitar&aacute; tr&ecirc;s formatos diferentes de URL.
+* Ele autom&aacute;ticamente j&aacute; gera o thumbnail do v&iacute;deo, mas se voc&ecirc; desejar customizar a thumb &eacute; s&oacute; adicionar a mesma como "Imagem Destacada".
+* Ao ativar o plugin autom&aacute;ticamente j&aacute; &eacute; criada uma p&aacute;gina chamada "Galeria de V&iacute;deo" que a mesma ser&aacute; encontrada dentro da aba "P&aacute;gina".
+* Nela conter&aacute; um shortcode equivalente a esse: [chr-youtube-gallery order="DESC" orderby="date" posts="6"].
+* Esse &eacute; o padr&atilde;o pr&eacute;-determinado, mas se desejar alterar &eacute; somente apagar o mesmo e clicar no &iacute;cone igual do play do youtube que abrir&aacute; um editor.
+* Nele voc&ecirc; poder&aacute; adicionar as Ordena&ccedil;&otilde;es tanto quanto "Decrescente - Crescente" ou por "Data - Nome - Rand&ocirc;mico" e a Quantidade de V&iacute;deo por p&aacute;gina que voc&ecirc; desejar.
 
 == Frequently Asked Questions ==
 
 = 
-What is the plugin license?
+Qual &eacute; a licen&ccedil;a do plugin? 
 =
 
-This plugin is licensed under GPL.
+Este plugin esta licenciado como GPL.
+
+= O que eu preciso para utilizar este plugin? =
+
+* Possuir instalada qualquer vers&atilde;o do WordPress.
+* Opcional ter o plugin WP-PageNavi instalado para o sistema de pagina&ccedil;&atilde;o.
 
 == Screenshots ==
 
-1. Side flap Slider
-2. List all Sliders
-3. Add New Slider
-4. Side flap RJS Settings
-5. Responsive jQuery Slider - Settings
-6. Final Result
+1. Aba lateral de V&iacute;deos
+2. P&aacute;gina de listagem dos V&iacute;deos
+3. P&aacute;gina de Cadastro do V&iacute;deo 
+4. P&aacute;gina com o shortcode para a cria&ccedil;&atilde;o da galeria
+5. Box de configura&ccedil;&atilde;o do shortcode
+6. Tela de configura&ccedil;&atilde;o do plugin
+7. Widget
+8. Exibi&ccedil;&atilde;o dos v&iacute;deos
 
 == Changelog ==
 
 = 1.0.0 =
 
-* Initial version of the plugin.
+* Vers&atilde;o incial do plugin.
 
 = 1.0.1 =
 
-* Updated a bug.
+* Suporte multi-l&iacute;nguas.
+
+= 2.0.0 =
+
+* Add support for widget.
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 == Upgrade Notice ==
 
@@ -86,12 +102,18 @@ This plugin is licensed under GPL.
 
 = 1.0.1 =
 
-* Updated a bug.
+* Suporte multi-l&iacute;nguas.
+
+= 2.0.0 =
+
+* new: Add support for widget.
+
+* new: New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 == License ==
 
-Responsive jQuery Slider is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+YouTube Simple Gallery is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Responsive jQuery Slider is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+YouTube Simple Gallery is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with CodexFree. If not, see <http://www.gnu.org/licenses/>.
