@@ -9,18 +9,38 @@ function ysg_chr_youtube_gallery_shortcode( $atts ) {
         'orderby' => 'date',
         'order' => 'DESC',
         'posts' => 6,
+        'category' => 'all',
     ), $atts ) );
 
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
     // define query parameters based on attributes
-    $options = array(
-        'post_type' => 'youtube-gallery',
-        'order' => $order,
-        'orderby' => $orderby,
-        'posts_per_page' => $posts,
-        'paged' => $paged,
-    );
+    
+    if($category != 'all'){
+	    $options = array(
+	        'post_type' => 'youtube-gallery',
+	        'order' => $order,
+	        'orderby' => $orderby,
+	        'posts_per_page' => $posts,
+	        'paged' => $paged,
+	        'tax_query' => array(
+                array(
+                    'taxonomy' => 'youtube-videos',
+                    'field' => 'slug',
+                    'terms' => array($category)
+                )
+            )
+	    );
+    }else{
+    	$options = array(
+	        'post_type' => 'youtube-gallery',
+	        'order' => $order,
+	        'orderby' => $orderby,
+	        'posts_per_page' => $posts,
+	        'paged' => $paged,
+	    );
+    };
+
     
     global $ysg_options; $ysg_settings = get_option( 'ysg_options', $ysg_options );
     
@@ -28,6 +48,7 @@ function ysg_chr_youtube_gallery_shortcode( $atts ) {
     
     // run the loop based on the query
     if($loop_youtube_gallery->have_posts()) {
+    
 	echo '<ul class="ul-YoutubeGallery">';
 		while ( $loop_youtube_gallery->have_posts() ) : $loop_youtube_gallery->the_post(); $desc_value = get_post_meta( get_the_ID(), 'valor_desc', true ); $idvideo = get_post_meta( get_the_ID(), 'valor_url', true ); $embed_code = ysg_youtubeEmbedFromUrl($idvideo); $size_thumb_w = $ysg_settings['ysg_thumb_wight']; $size_thumb_h = $ysg_settings['ysg_thumb_height']; ?>
 		<li class="li-YoutubeGallery" id="post-<?php the_ID(); ?>">

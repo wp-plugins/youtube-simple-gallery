@@ -2,13 +2,13 @@
 
 Contributors: chrdesigner
 Donate link: 
-Tags: youtube, video gallery, simple gallery, galeria de video, thickbox
+Tags: youtube, video gallery, simple gallery, galeria de video, thickbox, widgtes
 
 Requires at least: 3.0
 
-Tested up to: 3.7.1
+Tested up to: 3.8.2
 
-Stable tag: 2.0.0
+Stable tag: 2.1.0
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,67 +17,86 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 * Portugu&ecirc;s (Default)
 * English
+* Fran&ccedil;ais
 
 == Description ==
 
-O YouTube Simple Gallery &eacute; um plugin que voc&ecirc; pode criar uma &aacute;rea de v&iacute;deos para o YouTube.
+YouTube Simple Gallery is a plugin you can create an area for YouTube videos quickly with management by short code.
 
 = Idiomas: =
 
 * Portugu&ecirc;s (Default)
 * English
 
-= New Updates 2.0 =
+= Update 2.0 =
 
 * Add support for widget
 * New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
 
+= New Updates 2.1 =
+
+* Add French language
+* Filter per category
+* Add thumbnail preview in list and inside the post.
+
 = Demo =
+
+http://www.chrdesigner.com/demo/video-gallery
+
+= How Install =
+
+http://www.chrdesigner.com/demo/plugins/youtube-simple-gallery
+
+= Look for all my plugins =
 
 Sign in for see the demos, all my plugins...
 
-* Front-end: http://www.chrdesigner.com/demo/
-* Back-end: http://www.chrdesigner.com/demo/login/
+Front-end: http://www.chrdesigner.com/demo/
+
+Back-end: http://www.chrdesigner.com/demo/login/
+
+Username: demo - Password: demo
 
 == Installation ==
 
-= Instala&ccedil;&atilde;o do plugin: =
+= Installing the plugin =
 
-* Envie os arquivos do plugin para a pasta wp-content/plugins, ou instale usando o instalador de plugins do WordPress;
-* Ative o plugin;
+* Upload the plugin to the wp-content/plugins  folder or install using the installer of WordPress plugins ;
+* Activate the plugin ;
 
-= Como usar: =
+= How to use =
 
-* Ap&oacute;s ativar o plugin ir&aacute; aparecer uma aba chamada "V&iacute;deos" nela voc&ecirc; poder&aacute; cadastrar seus v&iacute;deos somente com o link do v&iacute;deo, o plugin aceitar&aacute; tr&ecirc;s formatos diferentes de URL.
-* Ele autom&aacute;ticamente j&aacute; gera o thumbnail do v&iacute;deo, mas se voc&ecirc; desejar customizar a thumb &eacute; s&oacute; adicionar a mesma como "Imagem Destacada".
-* Ao ativar o plugin autom&aacute;ticamente j&aacute; &eacute; criada uma p&aacute;gina chamada "Galeria de V&iacute;deo" que a mesma ser&aacute; encontrada dentro da aba "P&aacute;gina".
-* Nela conter&aacute; um shortcode equivalente a esse: [chr-youtube-gallery order="DESC" orderby="date" posts="6"].
-* Esse &eacute; o padr&atilde;o pr&eacute;-determinado, mas se desejar alterar &eacute; somente apagar o mesmo e clicar no &iacute;cone igual do play do youtube que abrir&aacute; um editor.
-* Nele voc&ecirc; poder&aacute; adicionar as Ordena&ccedil;&otilde;es tanto quanto "Decrescente - Crescente" ou por "Data - Nome - Rand&ocirc;mico" e a Quantidade de V&iacute;deo por p&aacute;gina que voc&ecirc; desejar.
+* After activating the plugin you'll see a tab called "Videos" on it you can register your videos with only the video link , the plugin will accept three different URL formats.
+* He already automatically generates the thumbnail of the video, but if you want to customize the thumb just add the same as "Featured Image".
+* When activating the plugin automatically a page called "Video Gallery" that it will be found within the "Pages" tab is already created.
+* In it will contain an equivalent to this shortcode : [chr-youtube-gallery order="DESC" orderby="date" posts="6" category="all"].
+* This shortcode is the default, but if you want to change is just delete it and clicking on the same icon youtube play that opens an editor .
+* In the poup-up you will add as much as the Ordinances " Descending - Ascending " or " Date - Name - Random ".
 
 == Frequently Asked Questions ==
 
 = 
-Qual &eacute; a licen&ccedil;a do plugin? 
+What is the license of the plugin?
 =
 
-Este plugin esta licenciado como GPL.
+This plugin is licensed under GPL.
 
 = O que eu preciso para utilizar este plugin? =
 
-* Possuir instalada qualquer vers&atilde;o do WordPress.
-* Opcional ter o plugin WP-PageNavi instalado para o sistema de pagina&ccedil;&atilde;o.
+* What do I need to use this plugin?
+* Have the optional WP-PageNavi plugin installed for the paging system.
 
 == Screenshots ==
 
-1. Aba lateral de V&iacute;deos
-2. P&aacute;gina de listagem dos V&iacute;deos
-3. P&aacute;gina de Cadastro do V&iacute;deo 
-4. P&aacute;gina com o shortcode para a cria&ccedil;&atilde;o da galeria
-5. Box de configura&ccedil;&atilde;o do shortcode
-6. Tela de configura&ccedil;&atilde;o do plugin
+1. Side Tab Video
+2. Listing page Videos
+3. Registration Page Video
+4. Page with the shortcode to the gallery creation
+5. Box configuration shortcode
+6. Setup screen plugin
 7. Widget
-8. Exibi&ccedil;&atilde;o dos v&iacute;deos
+8. Display page videos
+9. Widget view the videos
 
 == Changelog ==
 
@@ -94,6 +113,12 @@ Este plugin esta licenciado como GPL.
 * Add support for widget.
 * New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
+= 2.1.0 =
+
+* Add French language.
+* Filter per category.
+* Add thumbnail preview in list and inside the post..
+
 == Upgrade Notice ==
 
 = 1.0.0 =
@@ -106,9 +131,15 @@ Este plugin esta licenciado como GPL.
 
 = 2.0.0 =
 
-* new: Add support for widget.
+* Add support for widget.
 
-* new: New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
+
+= 2.1.0 =
+
+* Add French language.
+* Filter per category.
+* Add thumbnail preview in list and inside the post..
 
 == License ==
 

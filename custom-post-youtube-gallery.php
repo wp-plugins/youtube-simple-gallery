@@ -49,8 +49,10 @@
 
 	function ysg_meta_box_meta_video(){
 		global $post;
+
 		$metaBoxUrl = get_post_meta($post->ID, 'valor_url', true); 
 		$metaBoxDesc = get_post_meta($post->ID, 'valor_desc', true); 
+		$metaIdVideo = ysg_youtubeEmbedFromUrl($metaBoxUrl);
 		echo '
 		<ul>
 			<li>
@@ -64,7 +66,16 @@
 					&bull; http://www.youtube.com/watch?v=UzifCbU_gJU&feature=related<br />
 					&bull; http://youtu.be/UzifCbU_gJU<br />
 				</em>
+			</li>';
+			if($metaIdVideo != null){
+			?>
+			<li>
+				<h4><?php echo __('Imagem Original do V&iacute;deo', 'youtube-simple-gallery') ;?>:</h4>
+				<?php echo '<img title="'. get_the_title().'" alt="'. get_the_title().'" src="http://img.youtube.com/vi/' . $metaIdVideo .'/mqdefault.jpg" />';	?>				
+				<br />
+				<em style="padding: 5px 0; display: block; color: #666;"><?php echo __('&bull; Aten&ccedil;&atilde;o: Quando tiver uma imagem destacada essa ser&aacute; alterada pela mesma.', 'youtube-simple-gallery') ;?></em>
 			</li>
+			<?php }; echo '
 			<li>
 				<label for="inputValorDesc" style="width:100%; display:block; font-weight: bold;">'. __('Descri&ccedil;&atilde;o:', 'youtube-simple-gallery') .' </label>
 				<input style="width:100%; display:block;" type="text" name="valor_desc" id="inputValorDesc" value="' . $metaBoxDesc . '" />

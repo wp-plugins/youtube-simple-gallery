@@ -19,6 +19,7 @@ array( 'description' => __('Um simples Widget para gerar a sua galeria de v&iacu
 public function widget( $args, $instance ) {
 $title = apply_filters( 'widget_title', $instance['title'] );
 $perpage = apply_filters( 'widget_perpage', $instance['perpage'] );
+$select = apply_filters( 'widget_select', $instance['select'] );
 $sluglink = apply_filters( 'widget_sluglink', $instance['sluglink'] );
 // before and after widget arguments are defined by themes
 echo $args['before_widget'];
@@ -26,7 +27,26 @@ if ( ! empty( $title ) )
 echo $args['before_title'] . $title . $args['after_title'];
 
 /*Start - Loop Videos*/
-query_posts('post_type=youtube-gallery&posts_per_page='.$perpage.'&order=DESC&orderby=date');
+if($select != 'all'){
+	query_posts( array(
+		'post_type' => 'youtube-gallery',
+		'posts_per_page' => $perpage,
+		'tax_query' => array(
+            array(
+                'taxonomy' => 'youtube-videos',
+                'field' => 'slug',
+                'terms' => $select
+            )
+        ),
+		'order' => 'DESC',
+		'orderby' => 'date'
+		) 
+	); 
+
+}else{
+    query_posts('post_type=youtube-gallery&posts_per_page='.$perpage.'&order=DESC&orderby=date');
+};
+
 global $ysg_options; $ysg_settings = get_option( 'ysg_options', $ysg_options );
 $size_thumb_s_w = $ysg_settings['ysg_thumb_s_wight']; $size_thumb_s_h = $ysg_settings['ysg_thumb_s_height']; 
 if (have_posts()) : 
@@ -59,38 +79,53 @@ echo $args['after_widget'];
 		
 // Widget Backend 
 public function form( $instance ) {
-if ( isset( $instance[ 'title' ] ) ) {
-$title = $instance[ 'title' ];
-$perpage = $instance[ 'perpage' ];
-$sluglink = $instance[ 'sluglink' ];
-}
-else {
-$title = __( 'Listagem dos V&iacute;deos', 'youtube-simple-gallery' );
-$perpage = '3';
-$sluglink =  __('galeria-de-video','youtube-simple-gallery' );
-}
-// Widget admin form
-?>
-<p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo __('T&iacute;tulo: ','youtube-simple-gallery' );?></label> 
-	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-</p>
-<p>
-	<label for="<?php echo $this->get_field_id( 'perpage' ); ?>"><?php echo __('Quantidade de V&iacute;deos:','youtube-simple-gallery' );?></label> 
-	<input class="widefat" id="<?php echo $this->get_field_id( 'perpage' ); ?>" name="<?php echo $this->get_field_name( 'perpage' ); ?>" type="text" value="<?php echo esc_attr( $perpage ); ?>" />
-</p>
-<p>
-	<label for="<?php echo $this->get_field_id( 'sluglink' ); ?>"><?php echo __('Insir&aacute; o SLUG da sua Galeria de V&iacute;deo:','youtube-simple-gallery' );?></label> 
-	<input class="widefat" id="<?php echo $this->get_field_id( 'sluglink' ); ?>" name="<?php echo $this->get_field_name( 'sluglink' ); ?>" type="text" value="<?php echo esc_attr( $sluglink ); ?>" />
-</p>
-<?php 
+	if ( isset( $instance[ 'title' ] ) ) {
+		$title = $instance[ 'title' ];
+		$perpage = $instance[ 'perpage' ];
+		$select = esc_attr($instance['select']);
+		$sluglink = $instance[ 'sluglink' ];
+	}
+	else {
+		$title = __( 'Listagem dos V&iacute;deos', 'youtube-simple-gallery' );
+		$perpage = '3';
+		$select = __('all', 'youtube-simple-gallery' );
+		$sluglink =  __('galeria-de-video','youtube-simple-gallery' );
+	}
+	// Widget admin form
+	?>
+	<p>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo __('T&iacute;tulo: ','youtube-simple-gallery' );?></label> 
+		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+	</p>
+	<p>
+		<label for="<?php echo $this->get_field_id( 'perpage' ); ?>"><?php echo __('Quantidade de V&iacute;deos:','youtube-simple-gallery' );?></label> 
+		<input class="widefat" id="<?php echo $this->get_field_id( 'perpage' ); ?>" name="<?php echo $this->get_field_name( 'perpage' ); ?>" type="text" value="<?php echo esc_attr( $perpage ); ?>" />
+	</p>
+	<p>
+		<label for="<?php echo $this->get_field_id('select'); ?>"><?php echo __('Listagem de V&iacute;deos por categoria:','youtube-simple-gallery' );?></label>
+		<?php $taxonomyName = "youtube-videos"; $parent_terms = get_terms($taxonomyName, array('orderby' => 'slug', 'hide_empty' => false)); ?>
+		<select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" style="width: 100%; display: inline-block;">
+			<option value="all" selected><?php echo __('Todos','youtube-simple-gallery' );?></option>
+        <?php
+		foreach ($parent_terms as $pterm) {
+			echo '<option value="' . $pterm->slug . '" id="' . $pterm->slug . '"', $select == $pterm->slug ? ' selected="selected"' : '', '>', $pterm->name, '</option>';
+		}
+		?>
+		</select>
+	</p>
+	<p>
+		<label for="<?php echo $this->get_field_id( 'sluglink' ); ?>"><?php echo __('Insir&aacute; o SLUG da sua Galeria de V&iacute;deo:','youtube-simple-gallery' );?></label> 
+		<input class="widefat" id="<?php echo $this->get_field_id( 'sluglink' ); ?>" name="<?php echo $this->get_field_name( 'sluglink' ); ?>" type="text" value="<?php echo esc_attr( $sluglink ); ?>" />
+	</p>
+	<?php 
 }
 	
 // Updating widget replacing old instances with new
 public function update( $new_instance, $old_instance ) {
 $instance = array();
-$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-$instance['perpage'] = ( ! empty( $new_instance['perpage'] ) ) ? strip_tags( $new_instance['perpage'] ) : '';
+$instance['title']    = ( ! empty( $new_instance['title'] ) )    ? strip_tags( $new_instance['title'] ) : '';
+$instance['perpage']  = ( ! empty( $new_instance['perpage'] ) )  ? strip_tags( $new_instance['perpage'] ) : '';
+$instance['select']   = strip_tags($new_instance['select']);
 $instance['sluglink'] = ( ! empty( $new_instance['sluglink'] ) ) ? strip_tags( $new_instance['sluglink'] ) : '';
 return $instance;
 }

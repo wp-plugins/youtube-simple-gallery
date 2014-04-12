@@ -16,7 +16,8 @@
 				var order = $('select.order option:selected').val();
 				var orderby = $('select.orderby option:selected').val();
 				var page = $('select.page option:selected').val();
-				tinymce.execCommand('mceInsertContent', false, '[chr-youtube-gallery order="'+order+'" orderby="'+orderby+'" posts="'+page+'"]');
+				var category = $('select.category option:selected').val();
+				tinymce.execCommand('mceInsertContent', false, '[chr-youtube-gallery order="'+order+'" orderby="'+orderby+'" posts="'+page+'" category="'+category+'"]');
 				$("#TB_overlay, #TB_window").remove();
 				return false;
 			});
@@ -26,7 +27,7 @@
 				padding: 0,
 				width: 630,
 				overflowY: 'scroll',
-				height: 400,
+				height: 320,
 				padding: 20
 			});
 			tbWindow.css({
@@ -79,6 +80,20 @@
   				</select> 
 			</li>
 		</ul>
+		<h3><?php echo __('Listagem de V&iacute;deos por categoria:','youtube-simple-gallery' );?></h3>
+		<ul class="ul-list-order">
+			<li>
+			<?php $taxonomyName = "youtube-videos";   
+			$parent_terms = get_terms($taxonomyName, array('orderby' => 'slug', 'hide_empty' => false));   
+			echo '<select class="category" style="width: 30%; display: inline-block;">';
+					echo '<option value="all" selected>'.__('Todos','youtube-simple-gallery' ) .'</option>';
+		        foreach ($parent_terms as $pterm) {
+		        	echo '<option value="'.$pterm->slug.'">'.$pterm->name.'</option>';
+		        }
+		    echo '</select>';?>
+		    </li>
+		</ul>
+		    
 		<button class="insert_information" id="btn-send"><?php echo __('Enviar','youtube-simple-gallery' );?></button>
 	</fieldset>
 </body>

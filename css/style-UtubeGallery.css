@@ -13,7 +13,7 @@
 }
 
 .ul-YoutubeGallery li.li-YoutubeGallery{
-	float: left; margin: 0 12px 15px; width: 278px; 
+	float: left; margin: 0 12px 15px; width: auto; list-style-type: none;
 }
 
 .ul-YoutubeGallery li h3.title-YoutubeGallery{
@@ -25,7 +25,7 @@
 }
 
 .ul-YoutubeGallery li blockquote.blockquote-YoutubeGallery{
-	display: inline-block; width: 100%; padding: 4px 0; font-style: italic; color: #666; font-size: 11px;
+	display: inline-block; width: 100%; padding: 4px 0; font-style: italic; color: #666; font-size: 11px; margin: 0;
 }
 
 .chr-default-pagination{
