@@ -1,7 +1,7 @@
 === YouTube Simple Gallery ===
 
 Contributors: chrdesigner
-Donate link: 
+Donate link: http://www.chrdesigner.com/donate/
 Tags: youtube, video gallery, simple gallery, galeria de video, thickbox, widgtes
 
 Requires at least: 3.0
@@ -27,6 +27,11 @@ YouTube Simple Gallery is a plugin you can create an area for YouTube videos qui
 
 * Portugu&ecirc;s (Default)
 * English
+* Fran&ccedil;ais
+
+= Translate: =
+
+Do you want help me translate this plugin for your language? Please, send me your file <strong>.po</strong> for my email <mailto:chrdesigner@chrdesigner.com>
 
 = Update 2.0 =
 
@@ -117,7 +122,7 @@ This plugin is licensed under GPL.
 
 * Add French language.
 * Filter per category.
-* Add thumbnail preview in list and inside the post..
+* Add thumbnail preview in list and inside the post.
 
 == Upgrade Notice ==
 
@@ -139,7 +144,7 @@ This plugin is licensed under GPL.
 
 * Add French language.
 * Filter per category.
-* Add thumbnail preview in list and inside the post..
+* Add thumbnail preview in list and inside the post.
 
 == License ==
 
