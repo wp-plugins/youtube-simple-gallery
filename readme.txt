@@ -39,7 +39,6 @@ YouTube Simple Gallery is a plugin you can create an area for YouTube videos qui
 
 * Update English Translation.
 * Added Support FontAwesome.css in the Admin Page.
-* Added new function for not display the related videos.
 * Added Persian (Iran) by Pouya Abbassi.
 * Added Playback quality in the video.
 * Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
@@ -131,7 +130,6 @@ This plugin is licensed under GPL.
 
 * Update English Translation.
 * Added Support FontAwesome.css in the Admin Page.
-* Added new function for not display the related videos.
 * Added Persian (Iran) by Pouya Abbassi.
 * Added Playback quality in the video.
 * Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
@@ -163,7 +161,6 @@ This plugin is licensed under GPL.
 
 * Update English Translation.
 * Added Support FontAwesome.css in the Admin Page.
-* Added new function for not display the related videos.
 * Added Persian (Iran) by Pouya Abbassi.
 * Added Playback quality in the video.
 * Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
