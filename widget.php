@@ -48,15 +48,60 @@ if($select != 'all'){
 };
 
 global $ysg_options; $ysg_settings = get_option( 'ysg_options', $ysg_options );
-$size_thumb_s_w = $ysg_settings['ysg_thumb_s_wight']; $size_thumb_s_h = $ysg_settings['ysg_thumb_s_height']; 
+	
+	add_thickbox();
+
+	$size_thumb_s_w = $ysg_settings['ysg_thumb_s_wight'];
+ 	$size_thumb_s_h = $ysg_settings['ysg_thumb_s_height'];
+
 if (have_posts()) : 
 	echo '<ul class="ul-Widget-YoutubeGallery">';
-	while ( have_posts() ) : the_post(); $desc_value = get_post_meta( get_the_ID(), 'valor_desc', true ); $idvideo = get_post_meta( get_the_ID(), 'valor_url', true ); $embed_code = ysg_youtubeEmbedFromUrl($idvideo); ?>
+	while ( have_posts() ) : the_post();
+
+	// Values YSG
+	$desc_value = get_post_meta( get_the_ID(), 'valor_desc', true );
+	$idvideo = get_post_meta( get_the_ID(), 'valor_url', true );
+	
+	$quality_video = get_post_meta( get_the_ID(), 'custom_element_grid_quality_meta_box', true );
+	if ($quality_video == null){
+		$quality_video = 'default';
+	}else{
+		$quality_video = $quality_video;
+	}
+	
+	$similar_video = get_post_meta( get_the_ID(), 'radio_similiar', true );
+	if ($similar_video == null){
+		$similar_video = '1';
+	}else{
+		$similar_video = $similar_video;
+	}
+
+	$controles_video = get_post_meta( get_the_ID(), 'radio_controles', true );
+	if ($controles_video == null){
+		$controles_video = '1';
+	}else{
+		$controles_video = $controles_video;
+	}
+
+	$title_video = get_post_meta( get_the_ID(), 'radio_title', true );
+	if ($title_video == null){
+		$title_video = '1';
+	}else{
+		$title_video = $title_video;
+	}
+
+	$embed_code = ysg_youtubeEmbedFromUrl($idvideo);
+	$size_thumb_w = $ysg_settings['ysg_thumb_wight'];
+	$size_thumb_h = $ysg_settings['ysg_thumb_height']; 
+
+	?>
+	
 	<li class="li-Widget-YoutubeGallery">
 		<h3 class="title-Widget-YoutubeGallery"><?php the_title();?></h3>
-		<?php add_thickbox(); ?>
-		<div id="video-widget-id-<?php the_ID(); ?>" style="display:none;"><iframe width="<?php echo $ysg_settings['ysg_size_wight']; ?>" height="<?php echo $ysg_settings['ysg_size_height']; ?>" src="http://www.youtube.com/embed/<?php echo $embed_code;?>?autoplay=<?php echo $ysg_settings['ysg_autoplay']; ?>" frameborder="0" allowfullscreen></iframe></div>
-		<a href="#TB_inline?width=<?php echo $ysg_settings['ysg_size_wight']; ?>&height=<?php echo $ysg_settings['ysg_size_height']; ?>&inlineId=video-widget-id-<?php the_ID(); ?>" title="<?php the_title();?>" class="thickbox">
+		<div id="video-widget-id-<?php the_ID(); ?>" style="display:none;">
+			<iframe width="<?php echo $ysg_settings['ysg_size_wight']; ?>" height="<?php echo $ysg_settings['ysg_size_height']; ?>" src="http://www.youtube.com/embed/<?php echo $embed_code;?>?rel=<?php echo $similar_video;?>&amp;vq=<?php echo $quality_video;?>&amp;controls=<?php echo $controles_video;?>&amp;showinfo=<?php echo $title_video;?>&amp;autoplay=<?php echo $ysg_settings['ysg_autoplay']; ?>" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<a href="#TB_inline?width=<?php echo $ysg_settings['ysg_size_wight'] + '15'; ?>&height=<?php echo $ysg_settings['ysg_size_height'] + '20'; ?>&inlineId=video-widget-id-<?php the_ID(); ?>" title="<?php the_title();?>" class="thickbox">
 			<?php if ( has_post_thumbnail()) { the_post_thumbnail('chr-thumb-youtube', array('class' => 'img-YoutubeGallery chr-size-s-thumb')); }else{ echo '<img src="http://img.youtube.com/vi/'.$embed_code.'/mqdefault.jpg" class="img-YoutubeGallery chr-size-s-thumb" alt="'.get_the_title().'" title="'.get_the_title().'" />'; } ?>
 		</a>
 	</li>
@@ -114,7 +159,7 @@ public function form( $instance ) {
 		</select>
 	</p>
 	<p>
-		<label for="<?php echo $this->get_field_id( 'sluglink' ); ?>"><?php echo __('Insir&aacute; o SLUG da sua Galeria de V&iacute;deo:','youtube-simple-gallery' );?></label> 
+		<label for="<?php echo $this->get_field_id( 'sluglink' ); ?>"><?php echo __('Insir&aacute; o SLUG da p&aacute;gina <strong>Galeria de V&iacute;deo</strong>','youtube-simple-gallery' );?>:</label> 
 		<input class="widefat" id="<?php echo $this->get_field_id( 'sluglink' ); ?>" name="<?php echo $this->get_field_name( 'sluglink' ); ?>" type="text" value="<?php echo esc_attr( $sluglink ); ?>" />
 	</p>
 	<?php 

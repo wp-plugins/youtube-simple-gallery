@@ -1,4 +1,4 @@
-#TB_window {height: 400px !important;}
+#TB_window {min-height: 400px !important;}
 		
 legend{
 	font-size: 16px;font-weight: bold;text-transform: uppercase;color: #CC181E; font-family: "Arial Black";

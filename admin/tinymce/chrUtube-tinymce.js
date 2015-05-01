@@ -5,7 +5,7 @@
                 title : 'YouTube Simple Gallery',
                 image : url + '/icon-youtube.png',
                 onclick : function() {
-                    tb_show("Insert YouTube Simple Gallery", url+"/../tinymce/chrUtube-tinymce-page.php?a=a&width=670&height=400");
+                    tb_show("Insert YouTube Simple Gallery", url+"/../tinymce/chrUtube-tinymce-page.php?a=a&width=670&height=600");
                 }
             });
         },
@@ -17,8 +17,8 @@
                 longname : "YouTube Simple Gallery",
                 author : 'CHR Designer',
                 authorurl : 'http://www.chrdesigner.com/',
-                infourl : 'http://www.chrdesigner.com/blog/',
-                version : "1.0"
+                infourl : 'www.chrdesigner.com/demo/plugins/youtube-simple-gallery',
+                version : "2.2.0"
             };
         }
     });

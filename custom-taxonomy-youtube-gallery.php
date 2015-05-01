@@ -29,4 +29,6 @@ function register_taxonomy_categoria_videos() {
 	    'query_var' => true
     );
 register_taxonomy( 'youtube-videos', array('youtube-gallery'), $args );
-} 
+}
+
+

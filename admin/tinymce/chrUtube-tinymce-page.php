@@ -27,13 +27,13 @@
 				padding: 0,
 				width: 630,
 				overflowY: 'scroll',
-				height: 320,
+				height: 600,
 				padding: 20
 			});
 			tbWindow.css({
 				width: ajaxCont.outerWidth(),
 				marginLeft: -(ajaxCont.outerWidth()/2),
-				height: 340
+				height: 600
 			});
 		})		
 	</script>

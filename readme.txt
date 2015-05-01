@@ -2,13 +2,13 @@
 
 Contributors: chrdesigner
 Donate link: http://www.chrdesigner.com/donate/
-Tags: youtube, video gallery, simple gallery, galeria de video, thickbox, widgtes
+Tags: youtube, video gallery, simple gallery, galeria de video, gallery, videos, thickbox, widgtes, multilingue
 
-Requires at least: 3.0
+Requires at least: 3.8
 
-Tested up to: 3.8.2
+Tested up to: 4.2.1
 
-Stable tag: 2.1.0
+Stable tag: 2.2.0
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,32 +17,33 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 * Portugu&ecirc;s (Default)
 * English
-* Fran&ccedil;ais
-
-== Description ==
-
-YouTube Simple Gallery is a plugin you can create an area for YouTube videos quickly with management by short code.
-
-= Idiomas: =
-
-* Portugu&ecirc;s (Default)
-* English
-* Fran&ccedil;ais
+* Fran&ccedil;ais by Mermouy
+* Persian (Iran) by Pouya Abbassi
 
 = Translate: =
 
 Do you want help me translate this plugin for your language? Please, send me your file <strong>.po</strong> for my email <mailto:chrdesigner@chrdesigner.com>
 
-= Update 2.0 =
+== Description ==
 
-* Add support for widget
-* New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails
+YouTube Simple Gallery is a plugin you can create an area for YouTube videos quickly with management by shortcode.
 
-= New Updates 2.1 =
+= Localizations =
 
-* Add French language
-* Filter per category
-* Add thumbnail preview in list and inside the post.
+* Portugu&ecirc;s (Default)
+* English
+* Fran&ccedil;ais by Mermouy
+* Persian (Iran) by Pouya Abbassi
+
+= New Updates 2.2.0 =
+
+* Update English Translation.
+* Added Support FontAwesome.css in the Admin Page.
+* Added new function for not display the related videos.
+* Added Persian (Iran) by Pouya Abbassi.
+* Added Playback quality in the video.
+* Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
+* Added custom single page - "single-youtube-gallery.php"
 
 = Demo =
 
@@ -77,6 +78,7 @@ Username: demo - Password: demo
 * In it will contain an equivalent to this shortcode : [chr-youtube-gallery order="DESC" orderby="date" posts="6" category="all"].
 * This shortcode is the default, but if you want to change is just delete it and clicking on the same icon youtube play that opens an editor .
 * In the poup-up you will add as much as the Ordinances " Descending - Ascending " or " Date - Name - Random ".
+* For change the single video copy the file "youtube-simple-gallery > single-youtube-gallery.php" and paste inside of the your theme folder.
 
 == Frequently Asked Questions ==
 
@@ -102,6 +104,7 @@ This plugin is licensed under GPL.
 7. Widget
 8. Display page videos
 9. Widget view the videos
+10. Single Video Page
 
 == Changelog ==
 
@@ -115,14 +118,24 @@ This plugin is licensed under GPL.
 
 = 2.0.0 =
 
-* Add support for widget.
+* Added support for widget.
 * New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 = 2.1.0 =
 
-* Add French language.
+* Added French language.
 * Filter per category.
 * Add thumbnail preview in list and inside the post.
+
+= 2.2.0 =
+
+* Update English Translation.
+* Added Support FontAwesome.css in the Admin Page.
+* Added new function for not display the related videos.
+* Added Persian (Iran) by Pouya Abbassi.
+* Added Playback quality in the video.
+* Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
+* Added custom single page - "single-youtube-gallery.php"
 
 == Upgrade Notice ==
 
@@ -136,15 +149,25 @@ This plugin is licensed under GPL.
 
 = 2.0.0 =
 
-* Add support for widget.
+* Added support for widget.
 
 * New page for settings to plugin with AutoPlay true or false, size of video and differents sizes for thumbnails.
 
 = 2.1.0 =
 
-* Add French language.
+* Added French language.
 * Filter per category.
-* Add thumbnail preview in list and inside the post.
+* Added thumbnail preview in list and inside the post.
+
+= 2.2.0 =
+
+* Update English Translation.
+* Added Support FontAwesome.css in the Admin Page.
+* Added new function for not display the related videos.
+* Added Persian (Iran) by Pouya Abbassi.
+* Added Playback quality in the video.
+* Added new features like: Show or Hide suggested videos, player controls and video title and player actions.
+* Added custom single page - "single-youtube-gallery.php"
 
 == License ==
 
