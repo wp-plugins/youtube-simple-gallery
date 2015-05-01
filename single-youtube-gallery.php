@@ -57,7 +57,8 @@
 				echo '<img src="http://img.youtube.com/vi/'.$embed_code.'/sddefault.jpg" class="img-YoutubeGallery chr-size-image" alt="'.get_the_title().'" title="'.get_the_title().'" />';
 			}
 		?>
-			<b><?php _e('Clique na imagem, para iniciar o v&iacute;deo','youtube-simple-gallery');?></b>
+			<br />
+			<strong><?php _e('Clique na imagem, para iniciar o v&iacute;deo','youtube-simple-gallery');?></strong>
 		</a>
 		
 		<div id="video-id-<?php the_ID(); ?>"></div>
